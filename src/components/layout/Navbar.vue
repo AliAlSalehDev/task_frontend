@@ -21,11 +21,6 @@ const logoutAction = () => {
         <span class="mdi mdi-menu"></span>
       </button>
       <ul class="navbar-nav navbar-nav-right">
-        <li class="nav-item d-none d-lg-block full-screen-link">
-          <a class="nav-link cursor-pointer">
-            <i class="mdi mdi-fullscreen" id="fullscreen-button"></i>
-          </a>
-        </li>
         <li class="nav-item nav-logout d-none d-lg-block">
           <a class="nav-link" href="#" @click.prevent="logoutAction()">
             <i class="mdi mdi-power"></i>

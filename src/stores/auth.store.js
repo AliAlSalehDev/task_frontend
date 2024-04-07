@@ -1,7 +1,6 @@
 import { defineStore } from "pinia";
 import router from "@/router";
 import {sender} from "@/utils/axios.js";
-import { useAlertStore } from "../stores/alerts.store";
 
 export const useAuthStore = defineStore({
   id: "auth",
@@ -13,14 +12,11 @@ export const useAuthStore = defineStore({
   actions: {
     // Register Action
     async register(data) {
-      const alertStore = useAlertStore();
       try {
         const user = await sender.post(`/register`, data);
 
         // update pinia state
         this.user = user.data;
-
-        this.user.user.image_path = user.data.image_path;
 
         // store user details and jwt in local storage to keep user logged in between page refreshes
         localStorage.setItem("auth", JSON.stringify(user.data));

@@ -39,7 +39,6 @@ function request(method) {
 
         requestOptions.headers["Content-Type"] = "application/json";
         // requestOptions.headers["Accept"] = "application/*";
-        requestOptions.headers["locale"] = localStorage.getItem("lang");
 
         try {
             return axios({

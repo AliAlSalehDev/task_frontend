@@ -1,9 +1,9 @@
 <script setup>
-import {ref} from "vue";
+import {reactive, ref} from "vue";
 import router from "@/router/index.js";
 import {useAuthStore} from "@/stores/auth.store.js";
 
-const user = ref({
+const user = reactive({
   name: null,
   email: null,
   password: null,
@@ -12,7 +12,7 @@ const user = ref({
 
 async function register() {
   const authStore = useAuthStore();
-  await authStore.register(this.user);
+  await authStore.register(user);
 }
 </script>
 

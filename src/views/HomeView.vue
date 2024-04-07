@@ -14,9 +14,6 @@
 
     <div class="row">
       <div class="col-md-12">
-        <div class="alert alert-success">Creativity takes time!</div>
-      </div>
-      <div class="col-md-12">
         <div class="alert alert-info">
           <h5>What did I used in Back end?</h5>
           <ul>
