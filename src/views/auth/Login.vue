@@ -21,6 +21,14 @@ async function login() {
       <div class="content-wrapper d-flex align-items-center auth">
         <div class="row flex-grow">
           <div class="col-lg-4 mx-auto">
+            <div class="col-md-12">
+              <div class="alert alert-success">Creativity takes time!</div>
+              <div class="alert alert-info">
+                email: user1@user.com
+                <br />
+                password: 123123123
+              </div>
+            </div>
             <div class="auth-form-light text-left p-5">
               <h4>Hello! let's get started</h4>
               <form class="pt-3" @submit.prevent="login()">
